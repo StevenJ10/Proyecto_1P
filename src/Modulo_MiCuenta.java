@@ -8,12 +8,12 @@
  *
  * @author Darkness
  */
-public class Modulo_Impuestos extends javax.swing.JFrame {
+public class Modulo_MiCuenta extends javax.swing.JFrame {
 
     /**
-     * Creates new form Modulo_Impuestos1
+     * Creates new form Modulo_MiCuenta
      */
-    public Modulo_Impuestos() {
+    public Modulo_MiCuenta() {
         initComponents();
     }
 
@@ -29,24 +29,24 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Background = new javax.swing.JPanel();
         Btn_Salir = new javax.swing.JButton();
         Logo_Name = new javax.swing.JLabel();
-        Btn_Home = new javax.swing.JButton();
-        Btn_Recargar = new javax.swing.JButton();
-        Btn_FlechaDerecha = new javax.swing.JButton();
         Btn_FlechaIzquierda = new javax.swing.JButton();
+        Btn_FlechaDerecha = new javax.swing.JButton();
+        Btn_Recargar = new javax.swing.JButton();
+        Btn_Home = new javax.swing.JButton();
         Btn_Buscar = new javax.swing.JButton();
         jTextField_Buscar = new javax.swing.JTextField();
         Background_Header = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         Background_Main = new javax.swing.JPanel();
         Btn_Propietarios = new javax.swing.JButton();
         Btn_Pagos = new javax.swing.JButton();
-        Bg_SelectorImp = new javax.swing.JPanel();
         Btn_Impuestos = new javax.swing.JButton();
         Btn_Recargos = new javax.swing.JButton();
+        Bg_SelectorMC = new javax.swing.JPanel();
         Btn_MiCuenta = new javax.swing.JButton();
-        Bg_Contenido = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,28 +58,21 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Salir.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         Btn_Salir.setText("Salir");
         Background.add(Btn_Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 10, 130, 40));
+        Btn_Salir.getAccessibleContext().setAccessibleDescription("");
 
         Logo_Name.setFont(new java.awt.Font("Baskerville Old Face", 0, 60)); // NOI18N
-        Logo_Name.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Logo_Name.setText("COBROS S.A.");
+        Logo_Name.setMaximumSize(new java.awt.Dimension(366, 60));
+        Logo_Name.setMinimumSize(new java.awt.Dimension(366, 60));
+        Logo_Name.setName(""); // NOI18N
+        Logo_Name.setPreferredSize(new java.awt.Dimension(366, 60));
         Background.add(Logo_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 380, 60));
+        Logo_Name.getAccessibleContext().setAccessibleDescription("");
 
-        Btn_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
-        Btn_Home.setBorderPainted(false);
-        Btn_Home.setContentAreaFilled(false);
-        Btn_Home.setMaximumSize(new java.awt.Dimension(60, 60));
-        Btn_Home.setMinimumSize(new java.awt.Dimension(60, 60));
-        Btn_Home.setName(""); // NOI18N
-        Btn_Home.setPreferredSize(new java.awt.Dimension(60, 60));
-        Background.add(Btn_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 60, 60));
-
-        Btn_Recargar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/refresh (1).png"))); // NOI18N
-        Btn_Recargar.setBorderPainted(false);
-        Btn_Recargar.setContentAreaFilled(false);
-        Btn_Recargar.setMaximumSize(new java.awt.Dimension(60, 60));
-        Btn_Recargar.setMinimumSize(new java.awt.Dimension(60, 60));
-        Btn_Recargar.setPreferredSize(new java.awt.Dimension(60, 60));
-        Background.add(Btn_Recargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 60, 60));
+        Btn_FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Flecha_izq (1).png"))); // NOI18N
+        Btn_FlechaIzquierda.setBorderPainted(false);
+        Btn_FlechaIzquierda.setContentAreaFilled(false);
+        Background.add(Btn_FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 60, 60));
 
         Btn_FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha_derecha.png"))); // NOI18N
         Btn_FlechaDerecha.setBorderPainted(false);
@@ -89,12 +82,21 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_FlechaDerecha.setPreferredSize(new java.awt.Dimension(60, 60));
         Background.add(Btn_FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 60, 60));
 
-        Btn_FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Flecha_izq (1).png"))); // NOI18N
-        Btn_FlechaIzquierda.setBorderPainted(false);
-        Btn_FlechaIzquierda.setContentAreaFilled(false);
-        Btn_FlechaIzquierda.setName(""); // NOI18N
-        Btn_FlechaIzquierda.setPreferredSize(new java.awt.Dimension(60, 60));
-        Background.add(Btn_FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 60, 60));
+        Btn_Recargar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/refresh (1).png"))); // NOI18N
+        Btn_Recargar.setBorderPainted(false);
+        Btn_Recargar.setContentAreaFilled(false);
+        Btn_Recargar.setMaximumSize(new java.awt.Dimension(60, 60));
+        Btn_Recargar.setMinimumSize(new java.awt.Dimension(60, 60));
+        Btn_Recargar.setPreferredSize(new java.awt.Dimension(60, 60));
+        Background.add(Btn_Recargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 60, 60));
+
+        Btn_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
+        Btn_Home.setBorderPainted(false);
+        Btn_Home.setContentAreaFilled(false);
+        Btn_Home.setMaximumSize(new java.awt.Dimension(60, 60));
+        Btn_Home.setMinimumSize(new java.awt.Dimension(60, 60));
+        Btn_Home.setPreferredSize(new java.awt.Dimension(60, 60));
+        Background.add(Btn_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 60, 60));
 
         Btn_Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lupa.png"))); // NOI18N
         Btn_Buscar.setBorderPainted(false);
@@ -103,15 +105,18 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Buscar.setMinimumSize(new java.awt.Dimension(60, 60));
         Btn_Buscar.setPreferredSize(new java.awt.Dimension(60, 60));
         Background.add(Btn_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(995, 65, 60, 60));
+        Btn_Buscar.getAccessibleContext().setAccessibleDescription("");
 
         jTextField_Buscar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField_Buscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jTextField_Buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField_Buscar.setMinimumSize(new java.awt.Dimension(4, 33));
+        jTextField_Buscar.setName(""); // NOI18N
         Background.add(jTextField_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 70, 320, 50));
+        jTextField_Buscar.getAccessibleContext().setAccessibleName("");
 
         Background_Header.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagen_top.jpg"))); // NOI18N
-        Background.add(Background_Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 140));
+        Background_Header.setToolTipText("");
+        Background.add(Background_Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 140));
 
         jButton1.setFont(new java.awt.Font("Baskerville Old Face", 0, 30)); // NOI18N
         jButton1.setText("Home");
@@ -123,40 +128,35 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         jButton1.setPreferredSize(new java.awt.Dimension(93, 37));
         Background.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 155, 110, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha_dere_sin (1).png"))); // NOI18N
-        Background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 30, 30));
-
         jButton2.setFont(new java.awt.Font("Baskerville Old Face", 0, 30)); // NOI18N
-        jButton2.setText("Impuestos");
-        jButton2.setToolTipText("");
+        jButton2.setText("Mi Cuenta");
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setMaximumSize(new java.awt.Dimension(83, 37));
         jButton2.setMinimumSize(new java.awt.Dimension(83, 37));
         jButton2.setPreferredSize(new java.awt.Dimension(83, 37));
         Background.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 155, 160, 40));
+        jButton2.getAccessibleContext().setAccessibleDescription("");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha_dere_sin (1).png"))); // NOI18N
+        Background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 30, 30));
+        jLabel1.getAccessibleContext().setAccessibleDescription("");
 
         Background_Main.setBackground(new java.awt.Color(99, 184, 148));
-        Background_Main.setMinimumSize(new java.awt.Dimension(1080, 50));
-        Background_Main.setName(""); // NOI18N
+        Background_Main.setToolTipText("");
         Background_Main.setPreferredSize(new java.awt.Dimension(1080, 50));
         Background_Main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Btn_Propietarios.setBackground(new java.awt.Color(99, 184, 148));
         Btn_Propietarios.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
         Btn_Propietarios.setText("Propietarios");
+        Btn_Propietarios.setToolTipText("");
         Btn_Propietarios.setBorderPainted(false);
         Btn_Propietarios.setContentAreaFilled(false);
         Btn_Propietarios.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Propietarios.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_Propietarios.setPreferredSize(new java.awt.Dimension(175, 37));
-        Btn_Propietarios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_PropietariosActionPerformed(evt);
-            }
-        });
         Background_Main.add(Btn_Propietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 200, -1));
-        Btn_Propietarios.getAccessibleContext().setAccessibleDescription("");
 
         Btn_Pagos.setBackground(new java.awt.Color(99, 184, 148));
         Btn_Pagos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
@@ -165,10 +165,8 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Pagos.setContentAreaFilled(false);
         Btn_Pagos.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Pagos.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_Pagos.setPreferredSize(new java.awt.Dimension(97, 37));
         Background_Main.add(Btn_Pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 11, 200, -1));
-        Btn_Pagos.getAccessibleContext().setAccessibleDescription("");
-
-        Bg_SelectorImp.setBackground(new java.awt.Color(64, 149, 113));
 
         Btn_Impuestos.setBackground(new java.awt.Color(99, 184, 148));
         Btn_Impuestos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
@@ -178,36 +176,19 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Impuestos.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Impuestos.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_Impuestos.setPreferredSize(new java.awt.Dimension(175, 37));
-
-        javax.swing.GroupLayout Bg_SelectorImpLayout = new javax.swing.GroupLayout(Bg_SelectorImp);
-        Bg_SelectorImp.setLayout(Bg_SelectorImpLayout);
-        Bg_SelectorImpLayout.setHorizontalGroup(
-            Bg_SelectorImpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Bg_SelectorImpLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(Btn_Impuestos, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        Bg_SelectorImpLayout.setVerticalGroup(
-            Bg_SelectorImpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Bg_SelectorImpLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addComponent(Btn_Impuestos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        Btn_Impuestos.getAccessibleContext().setAccessibleDescription("");
-
-        Background_Main.add(Bg_SelectorImp, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, -1, 60));
+        Background_Main.add(Btn_Impuestos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 11, 200, -1));
 
         Btn_Recargos.setBackground(new java.awt.Color(99, 184, 148));
         Btn_Recargos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
         Btn_Recargos.setText("Recargos");
-        Btn_Recargos.setToolTipText("");
         Btn_Recargos.setBorderPainted(false);
         Btn_Recargos.setContentAreaFilled(false);
         Btn_Recargos.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Recargos.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_Recargos.setPreferredSize(new java.awt.Dimension(175, 37));
-        Background_Main.add(Btn_Recargos, new org.netbeans.lib.awtextra.AbsoluteConstraints(664, 11, 200, -1));
+        Background_Main.add(Btn_Recargos, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 11, 200, -1));
+
+        Bg_SelectorMC.setBackground(new java.awt.Color(64, 149, 113));
 
         Btn_MiCuenta.setBackground(new java.awt.Color(99, 184, 148));
         Btn_MiCuenta.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
@@ -217,27 +198,48 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_MiCuenta.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_MiCuenta.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_MiCuenta.setPreferredSize(new java.awt.Dimension(175, 37));
-        Background_Main.add(Btn_MiCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
-        Btn_MiCuenta.getAccessibleContext().setAccessibleDescription("");
+
+        javax.swing.GroupLayout Bg_SelectorMCLayout = new javax.swing.GroupLayout(Bg_SelectorMC);
+        Bg_SelectorMC.setLayout(Bg_SelectorMCLayout);
+        Bg_SelectorMCLayout.setHorizontalGroup(
+            Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
+            .addGroup(Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bg_SelectorMCLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Btn_MiCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        Bg_SelectorMCLayout.setVerticalGroup(
+            Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+            .addGroup(Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bg_SelectorMCLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Btn_MiCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        Background_Main.add(Bg_SelectorMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 0, 200, -1));
 
         Background.add(Background_Main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 1080, 60));
+        Background_Main.getAccessibleContext().setAccessibleName("");
 
-        Bg_Contenido.setBackground(new java.awt.Color(204, 255, 204));
-        Bg_Contenido.setToolTipText("");
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel1.setToolTipText("");
 
-        javax.swing.GroupLayout Bg_ContenidoLayout = new javax.swing.GroupLayout(Bg_Contenido);
-        Bg_Contenido.setLayout(Bg_ContenidoLayout);
-        Bg_ContenidoLayout.setHorizontalGroup(
-            Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1040, Short.MAX_VALUE)
         );
-        Bg_ContenidoLayout.setVerticalGroup(
-            Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 400, Short.MAX_VALUE)
         );
 
-        Background.add(Bg_Contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 1040, 400));
-        Bg_Contenido.getAccessibleContext().setAccessibleName("");
+        Background.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 1040, 400));
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel2.setText("2023 Cobros S.A.");
@@ -247,7 +249,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.PREFERRED_SIZE, 1080, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,10 +258,6 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void Btn_PropietariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PropietariosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Btn_PropietariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,21 +276,20 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Modulo_Impuestos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_MiCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Modulo_Impuestos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_MiCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Modulo_Impuestos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_MiCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Modulo_Impuestos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_MiCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Modulo_Impuestos().setVisible(true);
+                new Modulo_MiCuenta().setVisible(true);
             }
         });
     }
@@ -301,8 +298,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
     private javax.swing.JPanel Background;
     private javax.swing.JLabel Background_Header;
     private javax.swing.JPanel Background_Main;
-    private javax.swing.JPanel Bg_Contenido;
-    private javax.swing.JPanel Bg_SelectorImp;
+    private javax.swing.JPanel Bg_SelectorMC;
     private javax.swing.JButton Btn_Buscar;
     private javax.swing.JButton Btn_FlechaDerecha;
     private javax.swing.JButton Btn_FlechaIzquierda;
@@ -319,6 +315,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField_Buscar;
     // End of variables declaration//GEN-END:variables
 }
