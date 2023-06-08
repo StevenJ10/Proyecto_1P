@@ -172,6 +172,11 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
         btnModuloImpuestos1.setBorderPainted(false);
         btnModuloImpuestos1.setContentAreaFilled(false);
         btnModuloImpuestos1.setFocusable(false);
+        btnModuloImpuestos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloImpuestos1ActionPerformed(evt);
+            }
+        });
 
         btnModuloRecargos1.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         btnModuloRecargos1.setText("Recargos");
@@ -179,6 +184,11 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
         btnModuloRecargos1.setBorderPainted(false);
         btnModuloRecargos1.setContentAreaFilled(false);
         btnModuloRecargos1.setFocusable(false);
+        btnModuloRecargos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloRecargos1ActionPerformed(evt);
+            }
+        });
 
         btnModuloCuenta1.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         btnModuloCuenta1.setText("Mi Cuenta");
@@ -186,6 +196,11 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
         btnModuloCuenta1.setBorderPainted(false);
         btnModuloCuenta1.setContentAreaFilled(false);
         btnModuloCuenta1.setFocusable(false);
+        btnModuloCuenta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloCuenta1ActionPerformed(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(64, 149, 113));
 
@@ -469,14 +484,14 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnConsultarPropietarioActionPerformed
 
     private void btnModuloPropietarios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPropietarios1ActionPerformed
-        
-        
+        Modulo_Propietarios mp = new Modulo_Propietarios();
+        mp.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnModuloPropietarios1ActionPerformed
 
-   
     private void btnModuloPagos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPagos1ActionPerformed
-        Modulo_Pagos abrir = new Modulo_Pagos();
-        abrir.setVisible(true);
+        Modulo_Pagos pagos = new Modulo_Pagos();
+        pagos.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPagos1ActionPerformed
 
@@ -489,6 +504,24 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnModuloImpuestos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloImpuestos1ActionPerformed
+        Modulo_Impuestos mi = new Modulo_Impuestos();
+        mi.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloImpuestos1ActionPerformed
+
+    private void btnModuloRecargos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloRecargos1ActionPerformed
+        Modulo_Recargos mr = new Modulo_Recargos();
+        mr.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloRecargos1ActionPerformed
+
+    private void btnModuloCuenta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloCuenta1ActionPerformed
+        Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
+        cuenta.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloCuenta1ActionPerformed
 
     /**
      * @param args the command line arguments

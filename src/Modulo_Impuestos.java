@@ -15,6 +15,8 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
      */
     public Modulo_Impuestos() {
         initComponents();
+        //
+        this.setLocationRelativeTo(this);
     }
 
     /**
@@ -50,6 +52,8 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setUndecorated(true);
 
         Background.setBackground(new java.awt.Color(181, 218, 238));
         Background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -57,6 +61,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Salir.setBackground(new java.awt.Color(204, 255, 204));
         Btn_Salir.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         Btn_Salir.setText("Salir");
+        Btn_Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_SalirActionPerformed(evt);
+            }
+        });
         Background.add(Btn_Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 10, 130, 40));
 
         Logo_Name.setFont(new java.awt.Font("Baskerville Old Face", 0, 60)); // NOI18N
@@ -71,6 +80,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Home.setMinimumSize(new java.awt.Dimension(60, 60));
         Btn_Home.setName(""); // NOI18N
         Btn_Home.setPreferredSize(new java.awt.Dimension(60, 60));
+        Btn_Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_HomeActionPerformed(evt);
+            }
+        });
         Background.add(Btn_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 60, 60));
 
         Btn_Recargar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/refresh (1).png"))); // NOI18N
@@ -165,6 +179,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Pagos.setContentAreaFilled(false);
         Btn_Pagos.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Pagos.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_Pagos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_PagosActionPerformed(evt);
+            }
+        });
         Background_Main.add(Btn_Pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 11, 200, -1));
         Btn_Pagos.getAccessibleContext().setAccessibleDescription("");
 
@@ -178,6 +197,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Impuestos.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Impuestos.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_Impuestos.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_Impuestos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_ImpuestosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Bg_SelectorImpLayout = new javax.swing.GroupLayout(Bg_SelectorImp);
         Bg_SelectorImp.setLayout(Bg_SelectorImpLayout);
@@ -207,6 +231,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Recargos.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_Recargos.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_Recargos.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_Recargos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_RecargosActionPerformed(evt);
+            }
+        });
         Background_Main.add(Btn_Recargos, new org.netbeans.lib.awtextra.AbsoluteConstraints(664, 11, 200, -1));
 
         Btn_MiCuenta.setBackground(new java.awt.Color(99, 184, 148));
@@ -217,6 +246,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_MiCuenta.setMaximumSize(new java.awt.Dimension(175, 37));
         Btn_MiCuenta.setMinimumSize(new java.awt.Dimension(175, 37));
         Btn_MiCuenta.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_MiCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_MiCuentaActionPerformed(evt);
+            }
+        });
         Background_Main.add(Btn_MiCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
         Btn_MiCuenta.getAccessibleContext().setAccessibleDescription("");
 
@@ -258,8 +292,44 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Btn_PropietariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PropietariosActionPerformed
-        // TODO add your handling code here:
+        Modulo_Propietarios mp = new Modulo_Propietarios();
+        mp.setVisible(true);
+        dispose();
     }//GEN-LAST:event_Btn_PropietariosActionPerformed
+
+    private void Btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_Btn_SalirActionPerformed
+
+    private void Btn_PagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PagosActionPerformed
+        Modulo_Pagos pagos = new Modulo_Pagos();
+        pagos.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_PagosActionPerformed
+
+    private void Btn_ImpuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ImpuestosActionPerformed
+        Modulo_Impuestos mi = new Modulo_Impuestos();
+        mi.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_ImpuestosActionPerformed
+
+    private void Btn_RecargosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_RecargosActionPerformed
+        Modulo_Recargos mr = new Modulo_Recargos();
+        mr.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_RecargosActionPerformed
+
+    private void Btn_MiCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_MiCuentaActionPerformed
+        Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
+        cuenta.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_MiCuentaActionPerformed
+
+    private void Btn_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_HomeActionPerformed
+        Back abrir = new Back();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_HomeActionPerformed
 
     /**
      * @param args the command line arguments

@@ -119,6 +119,11 @@ public class Back extends javax.swing.JFrame {
         btnModuloImpuestos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnModuloImpuestos.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         btnModuloImpuestos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnModuloImpuestos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloImpuestosActionPerformed(evt);
+            }
+        });
         jPanel3.add(btnModuloImpuestos);
         btnModuloImpuestos.setBounds(410, 20, 210, 170);
 
@@ -139,6 +144,11 @@ public class Back extends javax.swing.JFrame {
         btnModuloCuenta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnModuloCuenta.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         btnModuloCuenta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnModuloCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloCuentaActionPerformed(evt);
+            }
+        });
         jPanel3.add(btnModuloCuenta);
         btnModuloCuenta.setBounds(590, 210, 210, 170);
 
@@ -186,6 +196,18 @@ public class Back extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnModuloImpuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloImpuestosActionPerformed
+        Modulo_Impuestos mi = new Modulo_Impuestos();
+        mi.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloImpuestosActionPerformed
+
+    private void btnModuloCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloCuentaActionPerformed
+        Modulo_MiCuenta mc = new Modulo_MiCuenta();
+        mc.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloCuentaActionPerformed
 
     /**
      * @param args the command line arguments
