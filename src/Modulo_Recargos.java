@@ -15,6 +15,9 @@ public class Modulo_Recargos extends javax.swing.JFrame {
      */
     public Modulo_Recargos() {
         initComponents();
+        
+        //Indica que la ventana debe ser centrada en la pantalla
+        this.setLocationRelativeTo(this);
     }
 
     /**
@@ -26,21 +29,314 @@ public class Modulo_Recargos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Background = new javax.swing.JPanel();
+        Btn_Salir = new javax.swing.JButton();
+        Logo_Name = new javax.swing.JLabel();
+        Btn_Home = new javax.swing.JButton();
+        Btn_Recargar = new javax.swing.JButton();
+        Btn_FlechaDerecha = new javax.swing.JButton();
+        Btn_FlechaIzquierda = new javax.swing.JButton();
+        Btn_Buscar = new javax.swing.JButton();
+        jTextField_Buscar = new javax.swing.JTextField();
+        Background_Header = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        Background_Main = new javax.swing.JPanel();
+        Btn_Propietarios = new javax.swing.JButton();
+        Btn_Pagos = new javax.swing.JButton();
+        Bg_SelectorImp = new javax.swing.JPanel();
+        Btn_Recargos = new javax.swing.JButton();
+        Btn_Impuestos = new javax.swing.JButton();
+        Btn_MiCuenta = new javax.swing.JButton();
+        Bg_Contenido = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Background.setBackground(new java.awt.Color(181, 218, 238));
+        Background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Btn_Salir.setBackground(new java.awt.Color(204, 255, 204));
+        Btn_Salir.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        Btn_Salir.setText("Salir");
+        Btn_Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_SalirActionPerformed(evt);
+            }
+        });
+        Background.add(Btn_Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 10, 130, 40));
+
+        Logo_Name.setFont(new java.awt.Font("Baskerville Old Face", 0, 60)); // NOI18N
+        Logo_Name.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Logo_Name.setText("COBROS S.A.");
+        Background.add(Logo_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 380, 60));
+
+        Btn_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
+        Btn_Home.setBorderPainted(false);
+        Btn_Home.setContentAreaFilled(false);
+        Btn_Home.setMaximumSize(new java.awt.Dimension(60, 60));
+        Btn_Home.setMinimumSize(new java.awt.Dimension(60, 60));
+        Btn_Home.setName(""); // NOI18N
+        Btn_Home.setPreferredSize(new java.awt.Dimension(60, 60));
+        Btn_Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_HomeActionPerformed(evt);
+            }
+        });
+        Background.add(Btn_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 60, 60));
+
+        Btn_Recargar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/refresh (1).png"))); // NOI18N
+        Btn_Recargar.setBorderPainted(false);
+        Btn_Recargar.setContentAreaFilled(false);
+        Btn_Recargar.setMaximumSize(new java.awt.Dimension(60, 60));
+        Btn_Recargar.setMinimumSize(new java.awt.Dimension(60, 60));
+        Btn_Recargar.setPreferredSize(new java.awt.Dimension(60, 60));
+        Background.add(Btn_Recargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 60, 60));
+
+        Btn_FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha_derecha.png"))); // NOI18N
+        Btn_FlechaDerecha.setBorderPainted(false);
+        Btn_FlechaDerecha.setContentAreaFilled(false);
+        Btn_FlechaDerecha.setMaximumSize(new java.awt.Dimension(60, 60));
+        Btn_FlechaDerecha.setMinimumSize(new java.awt.Dimension(60, 60));
+        Btn_FlechaDerecha.setPreferredSize(new java.awt.Dimension(60, 60));
+        Background.add(Btn_FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 60, 60));
+
+        Btn_FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Flecha_izq (1).png"))); // NOI18N
+        Btn_FlechaIzquierda.setBorderPainted(false);
+        Btn_FlechaIzquierda.setContentAreaFilled(false);
+        Btn_FlechaIzquierda.setName(""); // NOI18N
+        Btn_FlechaIzquierda.setPreferredSize(new java.awt.Dimension(60, 60));
+        Background.add(Btn_FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 60, 60));
+
+        Btn_Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lupa.png"))); // NOI18N
+        Btn_Buscar.setBorderPainted(false);
+        Btn_Buscar.setContentAreaFilled(false);
+        Btn_Buscar.setMaximumSize(new java.awt.Dimension(60, 60));
+        Btn_Buscar.setMinimumSize(new java.awt.Dimension(60, 60));
+        Btn_Buscar.setPreferredSize(new java.awt.Dimension(60, 60));
+        Background.add(Btn_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(995, 65, 60, 60));
+
+        jTextField_Buscar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jTextField_Buscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jTextField_Buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        Background.add(jTextField_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 70, 320, 50));
+
+        Background_Header.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagen_top.jpg"))); // NOI18N
+        Background.add(Background_Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 140));
+
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 0, 30)); // NOI18N
+        jButton1.setText("Home");
+        jButton1.setToolTipText("");
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setMaximumSize(new java.awt.Dimension(93, 37));
+        jButton1.setMinimumSize(new java.awt.Dimension(93, 37));
+        jButton1.setPreferredSize(new java.awt.Dimension(93, 37));
+        Background.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 155, 110, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha_dere_sin (1).png"))); // NOI18N
+        Background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 30, 30));
+
+        jButton2.setFont(new java.awt.Font("Baskerville Old Face", 0, 30)); // NOI18N
+        jButton2.setText("Impuestos");
+        jButton2.setToolTipText("");
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.setMaximumSize(new java.awt.Dimension(83, 37));
+        jButton2.setMinimumSize(new java.awt.Dimension(83, 37));
+        jButton2.setPreferredSize(new java.awt.Dimension(83, 37));
+        Background.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 155, 160, 40));
+
+        Background_Main.setBackground(new java.awt.Color(99, 184, 148));
+        Background_Main.setMinimumSize(new java.awt.Dimension(1080, 50));
+        Background_Main.setName(""); // NOI18N
+        Background_Main.setPreferredSize(new java.awt.Dimension(1080, 50));
+        Background_Main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Btn_Propietarios.setBackground(new java.awt.Color(99, 184, 148));
+        Btn_Propietarios.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
+        Btn_Propietarios.setText("Propietarios");
+        Btn_Propietarios.setBorderPainted(false);
+        Btn_Propietarios.setContentAreaFilled(false);
+        Btn_Propietarios.setMaximumSize(new java.awt.Dimension(175, 37));
+        Btn_Propietarios.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_Propietarios.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_Propietarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_PropietariosActionPerformed(evt);
+            }
+        });
+        Background_Main.add(Btn_Propietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 60));
+
+        Btn_Pagos.setBackground(new java.awt.Color(99, 184, 148));
+        Btn_Pagos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
+        Btn_Pagos.setText("Pagos");
+        Btn_Pagos.setBorderPainted(false);
+        Btn_Pagos.setContentAreaFilled(false);
+        Btn_Pagos.setMaximumSize(new java.awt.Dimension(175, 37));
+        Btn_Pagos.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_Pagos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_PagosActionPerformed(evt);
+            }
+        });
+        Background_Main.add(Btn_Pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, 180, 60));
+
+        Bg_SelectorImp.setBackground(new java.awt.Color(64, 149, 113));
+
+        Btn_Recargos.setBackground(new java.awt.Color(99, 184, 148));
+        Btn_Recargos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
+        Btn_Recargos.setText("Recargos");
+        Btn_Recargos.setToolTipText("");
+        Btn_Recargos.setBorderPainted(false);
+        Btn_Recargos.setContentAreaFilled(false);
+        Btn_Recargos.setMaximumSize(new java.awt.Dimension(175, 37));
+        Btn_Recargos.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_Recargos.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_Recargos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_RecargosActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Bg_SelectorImpLayout = new javax.swing.GroupLayout(Bg_SelectorImp);
+        Bg_SelectorImp.setLayout(Bg_SelectorImpLayout);
+        Bg_SelectorImpLayout.setHorizontalGroup(
+            Bg_SelectorImpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 210, Short.MAX_VALUE)
+            .addGroup(Bg_SelectorImpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bg_SelectorImpLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Btn_Recargos, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        Bg_SelectorImpLayout.setVerticalGroup(
+            Bg_SelectorImpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+            .addGroup(Bg_SelectorImpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bg_SelectorImpLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Btn_Recargos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        Background_Main.add(Bg_SelectorImp, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, -1, 60));
+
+        Btn_Impuestos.setBackground(new java.awt.Color(99, 184, 148));
+        Btn_Impuestos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
+        Btn_Impuestos.setText("Impuestos");
+        Btn_Impuestos.setBorderPainted(false);
+        Btn_Impuestos.setContentAreaFilled(false);
+        Btn_Impuestos.setMaximumSize(new java.awt.Dimension(175, 37));
+        Btn_Impuestos.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_Impuestos.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_Impuestos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_ImpuestosActionPerformed(evt);
+            }
+        });
+        Background_Main.add(Btn_Impuestos, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 7, 200, 50));
+
+        Btn_MiCuenta.setBackground(new java.awt.Color(99, 184, 148));
+        Btn_MiCuenta.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
+        Btn_MiCuenta.setText("Mi Cuenta");
+        Btn_MiCuenta.setBorderPainted(false);
+        Btn_MiCuenta.setContentAreaFilled(false);
+        Btn_MiCuenta.setMaximumSize(new java.awt.Dimension(175, 37));
+        Btn_MiCuenta.setMinimumSize(new java.awt.Dimension(175, 37));
+        Btn_MiCuenta.setPreferredSize(new java.awt.Dimension(175, 37));
+        Btn_MiCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_MiCuentaActionPerformed(evt);
+            }
+        });
+        Background_Main.add(Btn_MiCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(875, 10, 190, -1));
+
+        Background.add(Background_Main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 1080, 60));
+
+        Bg_Contenido.setBackground(new java.awt.Color(204, 255, 204));
+        Bg_Contenido.setToolTipText("");
+
+        javax.swing.GroupLayout Bg_ContenidoLayout = new javax.swing.GroupLayout(Bg_Contenido);
+        Bg_Contenido.setLayout(Bg_ContenidoLayout);
+        Bg_ContenidoLayout.setHorizontalGroup(
+            Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1040, Short.MAX_VALUE)
+        );
+        Bg_ContenidoLayout.setVerticalGroup(
+            Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+
+        Background.add(Bg_Contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 1040, 400));
+
+        jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel2.setText("2023 Cobros S.A.");
+        Background.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 690, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, 721, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SalirActionPerformed
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
+    }//GEN-LAST:event_Btn_SalirActionPerformed
+
+    private void Btn_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_HomeActionPerformed
+        //Mostrará la interfaz del Modulo Back "Home"
+        Back abrir = new Back();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_HomeActionPerformed
+
+    private void Btn_PropietariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PropietariosActionPerformed
+        //Mostrará la interfaz del Modulo Propietarios
+        Modulo_Propietarios mp = new Modulo_Propietarios();
+        mp.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_PropietariosActionPerformed
+
+    private void Btn_PagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PagosActionPerformed
+        //Mostrará la interfaz del Modulo de Pagos
+        Modulo_Pagos pagos = new Modulo_Pagos();
+        pagos.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_PagosActionPerformed
+
+    private void Btn_ImpuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ImpuestosActionPerformed
+        //Mostrará la interfaz del Modulo de Impuestos
+        Modulo_Impuestos mi = new Modulo_Impuestos();
+        mi.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_ImpuestosActionPerformed
+
+    private void Btn_RecargosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_RecargosActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
+        Modulo_Recargos mr = new Modulo_Recargos();
+        mr.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_RecargosActionPerformed
+
+    private void Btn_MiCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_MiCuentaActionPerformed
+        //Mostrará la interfaz del Modulo Mi Cuenta
+        Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
+        cuenta.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Btn_MiCuentaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +374,27 @@ public class Modulo_Recargos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Background;
+    private javax.swing.JLabel Background_Header;
+    private javax.swing.JPanel Background_Main;
+    private javax.swing.JPanel Bg_Contenido;
+    private javax.swing.JPanel Bg_SelectorImp;
+    private javax.swing.JButton Btn_Buscar;
+    private javax.swing.JButton Btn_FlechaDerecha;
+    private javax.swing.JButton Btn_FlechaIzquierda;
+    private javax.swing.JButton Btn_Home;
+    private javax.swing.JButton Btn_Impuestos;
+    private javax.swing.JButton Btn_MiCuenta;
+    private javax.swing.JButton Btn_Pagos;
+    private javax.swing.JButton Btn_Propietarios;
+    private javax.swing.JButton Btn_Recargar;
+    private javax.swing.JButton Btn_Recargos;
+    private javax.swing.JButton Btn_Salir;
+    private javax.swing.JLabel Logo_Name;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField jTextField_Buscar;
     // End of variables declaration//GEN-END:variables
 }

@@ -11,7 +11,9 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         
+        //Indica que la ventana debe ser centrada en la pantalla
         this.setLocationRelativeTo(null);
+        //Establece un título a la ventana 
         this.setTitle("Login");
     }
 

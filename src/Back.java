@@ -134,6 +134,11 @@ public class Back extends javax.swing.JFrame {
         btnModuloRecargos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnModuloRecargos.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         btnModuloRecargos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnModuloRecargos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloRecargosActionPerformed(evt);
+            }
+        });
         jPanel3.add(btnModuloRecargos);
         btnModuloRecargos.setBounds(770, 20, 210, 170);
 
@@ -181,33 +186,46 @@ public class Back extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnModuloPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPagosActionPerformed
-
+        //Mostrará la interfaz del Modulo Pagos
         Modulo_Pagos mp =new Modulo_Pagos();
         mp.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPagosActionPerformed
 
     private void btnModuloPropietariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPropietariosActionPerformed
+        //Mostrará la interfaz del Modulo Propietarios
         Modulo_Propietarios mp =new Modulo_Propietarios();
         mp.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPropietariosActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        System.exit(0);
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnModuloImpuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloImpuestosActionPerformed
+        //Mostrará la interfaz del Modulo Impuestos
         Modulo_Impuestos mi = new Modulo_Impuestos();
         mi.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloImpuestosActionPerformed
 
     private void btnModuloCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloCuentaActionPerformed
+        //Mostrará la interfaz del Modulo Mi Cuenta
         Modulo_MiCuenta mc = new Modulo_MiCuenta();
         mc.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloCuentaActionPerformed
+
+    private void btnModuloRecargosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloRecargosActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
+        Modulo_Recargos mr = new Modulo_Recargos();
+        mr.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloRecargosActionPerformed
 
     /**
      * @param args the command line arguments

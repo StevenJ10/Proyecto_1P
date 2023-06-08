@@ -15,7 +15,8 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
      */
     public Modulo_Impuestos() {
         initComponents();
-        //
+        
+        //Indica que la ventana debe ser centrada en la pantalla
         this.setLocationRelativeTo(this);
     }
 
@@ -157,7 +158,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Background_Main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Btn_Propietarios.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Propietarios.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Propietarios.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Propietarios.setText("Propietarios");
         Btn_Propietarios.setBorderPainted(false);
         Btn_Propietarios.setContentAreaFilled(false);
@@ -169,11 +170,11 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
                 Btn_PropietariosActionPerformed(evt);
             }
         });
-        Background_Main.add(Btn_Propietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 200, -1));
+        Background_Main.add(Btn_Propietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 210, -1));
         Btn_Propietarios.getAccessibleContext().setAccessibleDescription("");
 
         Btn_Pagos.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Pagos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Pagos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Pagos.setText("Pagos");
         Btn_Pagos.setBorderPainted(false);
         Btn_Pagos.setContentAreaFilled(false);
@@ -190,7 +191,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Bg_SelectorImp.setBackground(new java.awt.Color(64, 149, 113));
 
         Btn_Impuestos.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Impuestos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Impuestos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Impuestos.setText("Impuestos");
         Btn_Impuestos.setBorderPainted(false);
         Btn_Impuestos.setContentAreaFilled(false);
@@ -223,7 +224,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Background_Main.add(Bg_SelectorImp, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, -1, 60));
 
         Btn_Recargos.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Recargos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Recargos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Recargos.setText("Recargos");
         Btn_Recargos.setToolTipText("");
         Btn_Recargos.setBorderPainted(false);
@@ -239,7 +240,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Background_Main.add(Btn_Recargos, new org.netbeans.lib.awtextra.AbsoluteConstraints(664, 11, 200, -1));
 
         Btn_MiCuenta.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_MiCuenta.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_MiCuenta.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_MiCuenta.setText("Mi Cuenta");
         Btn_MiCuenta.setBorderPainted(false);
         Btn_MiCuenta.setContentAreaFilled(false);
@@ -251,7 +252,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
                 Btn_MiCuentaActionPerformed(evt);
             }
         });
-        Background_Main.add(Btn_MiCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, -1, -1));
+        Background_Main.add(Btn_MiCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(875, 10, 190, -1));
         Btn_MiCuenta.getAccessibleContext().setAccessibleDescription("");
 
         Background.add(Background_Main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 1080, 60));
@@ -292,40 +293,49 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Btn_PropietariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PropietariosActionPerformed
+        //Mostrará la interfaz del Modulo Propietarios
         Modulo_Propietarios mp = new Modulo_Propietarios();
         mp.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_PropietariosActionPerformed
 
     private void Btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SalirActionPerformed
-        System.exit(0);
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
     }//GEN-LAST:event_Btn_SalirActionPerformed
 
     private void Btn_PagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PagosActionPerformed
+        //Mostrará la interfaz del Modulo de Pagos
         Modulo_Pagos pagos = new Modulo_Pagos();
         pagos.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_PagosActionPerformed
 
     private void Btn_ImpuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ImpuestosActionPerformed
+        //Mostrará la interfaz del Modulo de Impuestos
         Modulo_Impuestos mi = new Modulo_Impuestos();
         mi.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_ImpuestosActionPerformed
 
     private void Btn_RecargosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_RecargosActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
         Modulo_Recargos mr = new Modulo_Recargos();
         mr.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_RecargosActionPerformed
 
     private void Btn_MiCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_MiCuentaActionPerformed
+        //Mostrará la interfaz del Modulo Mi Cuenta
         Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
         cuenta.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_MiCuentaActionPerformed
 
     private void Btn_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_HomeActionPerformed
+        //Mostrará la interfaz del Modulo Back "Home"
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();

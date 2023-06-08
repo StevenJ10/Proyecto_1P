@@ -16,7 +16,10 @@ public class Advertencia_eliminar extends javax.swing.JFrame {
      */
     public Advertencia_eliminar() {
         initComponents();
+        
+        //Indica que la ventana debe ser centrada en la pantalla
         this.setLocationRelativeTo(null);
+        //Establece un título a la ventana 
         this.setTitle("Advertencia_eliminar");
     }
 

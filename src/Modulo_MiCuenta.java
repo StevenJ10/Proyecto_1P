@@ -15,6 +15,9 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
      */
     public Modulo_MiCuenta() {
         initComponents();
+        
+        //Indica que la ventana debe ser centrada en la pantalla
+        this.setLocationRelativeTo(this);
     }
 
     /**
@@ -141,7 +144,7 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         Btn_Buscar.getAccessibleContext().setAccessibleDescription("");
 
         jTextField_Buscar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField_Buscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField_Buscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jTextField_Buscar.setMinimumSize(new java.awt.Dimension(4, 33));
         jTextField_Buscar.setName(""); // NOI18N
         Background.add(jTextField_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 70, 320, 50));
@@ -181,7 +184,7 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         Background_Main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Btn_Propietarios.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Propietarios.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Propietarios.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Propietarios.setText("Propietarios");
         Btn_Propietarios.setToolTipText("");
         Btn_Propietarios.setBorderPainted(false);
@@ -194,10 +197,10 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
                 Btn_PropietariosActionPerformed(evt);
             }
         });
-        Background_Main.add(Btn_Propietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 200, -1));
+        Background_Main.add(Btn_Propietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 210, -1));
 
         Btn_Pagos.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Pagos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Pagos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Pagos.setText("Pagos");
         Btn_Pagos.setBorderPainted(false);
         Btn_Pagos.setContentAreaFilled(false);
@@ -212,7 +215,7 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         Background_Main.add(Btn_Pagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 11, 200, -1));
 
         Btn_Impuestos.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Impuestos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Impuestos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Impuestos.setText("Impuestos");
         Btn_Impuestos.setBorderPainted(false);
         Btn_Impuestos.setContentAreaFilled(false);
@@ -227,7 +230,7 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         Background_Main.add(Btn_Impuestos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 11, 200, -1));
 
         Btn_Recargos.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_Recargos.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_Recargos.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_Recargos.setText("Recargos");
         Btn_Recargos.setBorderPainted(false);
         Btn_Recargos.setContentAreaFilled(false);
@@ -244,7 +247,7 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         Bg_SelectorMC.setBackground(new java.awt.Color(64, 149, 113));
 
         Btn_MiCuenta.setBackground(new java.awt.Color(99, 184, 148));
-        Btn_MiCuenta.setFont(new java.awt.Font("Baskerville Old Face", 0, 28)); // NOI18N
+        Btn_MiCuenta.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         Btn_MiCuenta.setText("Mi Cuenta");
         Btn_MiCuenta.setBorderPainted(false);
         Btn_MiCuenta.setContentAreaFilled(false);
@@ -264,18 +267,17 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
             .addGap(0, 200, Short.MAX_VALUE)
             .addGroup(Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(Bg_SelectorMCLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Btn_MiCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(Btn_MiCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 13, Short.MAX_VALUE)))
         );
         Bg_SelectorMCLayout.setVerticalGroup(
             Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 60, Short.MAX_VALUE)
             .addGroup(Bg_SelectorMCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(Bg_SelectorMCLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Bg_SelectorMCLayout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Btn_MiCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addContainerGap(12, Short.MAX_VALUE)))
         );
 
         Background_Main.add(Bg_SelectorMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 0, 200, -1));
@@ -295,15 +297,23 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         label_apellidos.setText("Apellidos:");
         label_apellidos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        txt_apellidos.setEditable(false);
+
+        txt_nombres.setEditable(false);
+
         label_nombres.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_nombres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         label_nombres.setText("Nombres:");
         label_nombres.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        txt_celular.setEditable(false);
+
         label_celular.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_celular.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         label_celular.setText("Celular:");
         label_celular.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        txt_email.setEditable(false);
 
         label_email.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_email.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -360,17 +370,27 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
         label_user.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         label_user.setText("Usuario:");
 
+        txt_user.setEditable(false);
+
+        txt_cargo.setEditable(false);
+
         label_cargo.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_cargo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         label_cargo.setText("Cargo:");
+
+        txt_areaTrabajo.setEditable(false);
 
         label_areaTrabajo.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_areaTrabajo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         label_areaTrabajo.setText("Area de Trabajo:");
 
+        txt_fechaIncSesion.setEditable(false);
+
         label_fechaIncSesion.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_fechaIncSesion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         label_fechaIncSesion.setText("Fecha de Inicio de Sesión:");
+
+        txt_fechaActividad.setEditable(false);
 
         label_fechaActividad.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         label_fechaActividad.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -451,40 +471,49 @@ public class Modulo_MiCuenta extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SalirActionPerformed
-        System.exit(0);
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
     }//GEN-LAST:event_Btn_SalirActionPerformed
 
     private void Btn_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_HomeActionPerformed
+        //Mostrará la interfaz del Modulo Home
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_HomeActionPerformed
 
     private void Btn_PropietariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PropietariosActionPerformed
+        //Mostrará la interfaz del Modulo Propietarios
         Modulo_Propietarios mp = new Modulo_Propietarios();
         mp.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_PropietariosActionPerformed
 
     private void Btn_PagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PagosActionPerformed
+        //Mostrará la interfaz del Modulo Pagos
         Modulo_Pagos pagos = new Modulo_Pagos();
         pagos.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_PagosActionPerformed
 
     private void Btn_ImpuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ImpuestosActionPerformed
+        //Mostrará la interfaz del Modulo Impuestos
         Modulo_Impuestos mi = new Modulo_Impuestos();
         mi.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_ImpuestosActionPerformed
 
     private void Btn_RecargosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_RecargosActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
         Modulo_Recargos mr = new Modulo_Recargos();
         mr.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_RecargosActionPerformed
 
     private void Btn_MiCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_MiCuentaActionPerformed
+        //Mostrará la interfaz del Modulo Mi Cuenta
         Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
         cuenta.setVisible(true);
         dispose();

@@ -5,9 +5,13 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
 
     public Modulo_Propietarios() {
         initComponents();
+        
+        //Indica que la ventana debe ser centrada en la pantalla
         this.setLocationRelativeTo(this);
+        //Establece el estado de selección del botón
         this.btnModuloPropietarios1.setSelected(true);
     }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -450,12 +454,14 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
     }//GEN-LAST:event_boton_flecha_adelanteActionPerformed
 
     private void boton_flecha_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_flecha_atrasActionPerformed
+        //Muestra la interfazl del Modulo Home
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_boton_flecha_atrasActionPerformed
 
     private void boton_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_homeActionPerformed
+        //Muestra la interfazl del Modulo Home
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();
@@ -470,9 +476,9 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
     }//GEN-LAST:event_boton_homeMouseClicked
 
     private void BtnEliminarPropietarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEliminarPropietarioActionPerformed
+        //Muestra una ventana de advertencia o mensaje de confirmación al usuario
         Advertencia_eliminar mpro = new Advertencia_eliminar();
         mpro.setVisible(true);
-
     }//GEN-LAST:event_BtnEliminarPropietarioActionPerformed
 
     private void BtnEditarPropietarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEditarPropietarioActionPerformed
@@ -484,40 +490,49 @@ public class Modulo_Propietarios extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnConsultarPropietarioActionPerformed
 
     private void btnModuloPropietarios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPropietarios1ActionPerformed
+        //Mostrará la interfaz del Modulo Propietarios
         Modulo_Propietarios mp = new Modulo_Propietarios();
         mp.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPropietarios1ActionPerformed
 
     private void btnModuloPagos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPagos1ActionPerformed
+        //Mostrará la interfaz del Modulo Pagos
         Modulo_Pagos pagos = new Modulo_Pagos();
         pagos.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPagos1ActionPerformed
 
     private void btnModuloRecargos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloRecargos2ActionPerformed
+        //Mostrará la interfaz del Modulo Home
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloRecargos2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        System.exit(0);
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnModuloImpuestos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloImpuestos1ActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
         Modulo_Impuestos mi = new Modulo_Impuestos();
         mi.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloImpuestos1ActionPerformed
 
     private void btnModuloRecargos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloRecargos1ActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
         Modulo_Recargos mr = new Modulo_Recargos();
         mr.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloRecargos1ActionPerformed
 
     private void btnModuloCuenta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloCuenta1ActionPerformed
+        //Mostrará la interfaz del Modulo Mi Cuenta
         Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
         cuenta.setVisible(true);
         dispose();

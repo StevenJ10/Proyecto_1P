@@ -5,6 +5,9 @@ public class Modulo_Pagos extends javax.swing.JFrame {
 
     public Modulo_Pagos() {
         initComponents();
+        
+        //Indica que la ventana debe ser centrada en la pantalla
+        this.setLocationRelativeTo(null);
     }
     
     @SuppressWarnings("unchecked")
@@ -373,62 +376,70 @@ public class Modulo_Pagos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton_flecha_atras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_flecha_atras1ActionPerformed
+        //Mostrará la interfaz del Modulo Home
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_boton_flecha_atras1ActionPerformed
 
     private void boton_home1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_home1ActionPerformed
-        Back bk =new Back();
-        bk.setVisible(true);
+        //Mostrará la interfaz del Modulo Home
+        Back abrir =new Back();
+        abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_boton_home1ActionPerformed
 
     private void boton_flecha_adelante1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_flecha_adelante1ActionPerformed
+        //Mostrará la interfaz del Modulo Impuestos
         Modulo_Impuestos mi =new Modulo_Impuestos();
         mi.setVisible(true);
         dispose();
     }//GEN-LAST:event_boton_flecha_adelante1ActionPerformed
 
     private void V_PrefecturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V_PrefecturaActionPerformed
-
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
         this.setVisible(false);
         Valores_Prefectura vp =new Valores_Prefectura();
         vp.setVisible(true);
     }//GEN-LAST:event_V_PrefecturaActionPerformed
 
     private void V_SRIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V_SRIActionPerformed
-        // TODO add your handling code here:
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
         this.setVisible(false);
         Valores_SRI sri =new Valores_SRI();
         sri.setVisible(true);
     }//GEN-LAST:event_V_SRIActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
         this.setVisible(false);
         Pago_en_Linea pl =new Pago_en_Linea();
         pl.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
         this.setVisible(false);
         Valores_AMT v_a =new Valores_AMT();
         v_a.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnModuloPropietarios2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPropietarios2ActionPerformed
+        //Mostrará la interfaz del Modulo Propietarios
         Modulo_Propietarios mp = new Modulo_Propietarios();
         mp.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPropietarios2ActionPerformed
 
     private void btnModuloPagos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloPagos2ActionPerformed
+        //Mostrará la interfaz del Modulo Pagos
         Modulo_Pagos pagos = new Modulo_Pagos();
         pagos.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloPagos2ActionPerformed
 
     private void btnModuloRecargos3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloRecargos3ActionPerformed
+        //Mostrará la interfaz del Modulo Home "back"
         Back abrir = new Back();
         abrir.setVisible(true);
         dispose();
@@ -439,22 +450,28 @@ public class Modulo_Pagos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnModuloRecargos5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        System.exit(0);
+        //Oculta la ventana actual y muestra la nueva ventana que se socilita
+        this.setVisible(false);
+        Login login = new Login();
+        login.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnModuloImpuestos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloImpuestos2ActionPerformed
+        //Mostrará la interfaz del Modulo Impuestos
         Modulo_Impuestos mi = new Modulo_Impuestos();
         mi.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloImpuestos2ActionPerformed
 
     private void btnModuloRecargos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloRecargos2ActionPerformed
+        //Mostrará la interfaz del Modulo Recargos
         Modulo_Recargos mr = new Modulo_Recargos();
         mr.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloRecargos2ActionPerformed
 
     private void btnModuloCuenta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloCuenta2ActionPerformed
+        //Mostrará la interfaz del Modulo Mi Cuenta
         Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
         cuenta.setVisible(true);
         dispose();

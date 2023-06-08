@@ -213,7 +213,7 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
+                <LineBorder thickness="2"/>
               </Border>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -339,7 +339,7 @@
                   <Color blue="94" green="b8" red="63" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Baskerville Old Face" size="28" style="0"/>
+                  <Font name="Baskerville Old Face" size="36" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Propietarios"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -360,7 +360,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="11" width="200" height="-1"/>
+                  <AbsoluteConstraints x="10" y="11" width="210" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -370,7 +370,7 @@
                   <Color blue="94" green="b8" red="63" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Baskerville Old Face" size="28" style="0"/>
+                  <Font name="Baskerville Old Face" size="36" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Pagos"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
@@ -400,7 +400,7 @@
                   <Color blue="94" green="b8" red="63" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Baskerville Old Face" size="28" style="0"/>
+                  <Font name="Baskerville Old Face" size="36" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Impuestos"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
@@ -430,7 +430,7 @@
                   <Color blue="94" green="b8" red="63" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Baskerville Old Face" size="28" style="0"/>
+                  <Font name="Baskerville Old Face" size="36" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Recargos"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
@@ -471,10 +471,9 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <EmptySpace min="0" pref="200" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="Btn_MiCuenta" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Btn_MiCuenta" min="-2" pref="187" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -483,10 +482,10 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <EmptySpace min="0" pref="60" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="Btn_MiCuenta" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace pref="12" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -499,7 +498,7 @@
                       <Color blue="94" green="b8" red="63" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Baskerville Old Face" size="28" style="0"/>
+                      <Font name="Baskerville Old Face" size="36" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Mi Cuenta"/>
                     <Property name="borderPainted" type="boolean" value="false"/>
@@ -618,8 +617,14 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_apellidos">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_nombres">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_nombres">
                   <Properties>
@@ -632,6 +637,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_celular">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_celular">
                   <Properties>
@@ -644,6 +652,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_email">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_email">
                   <Properties>
@@ -742,8 +753,14 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_user">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_cargo">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_cargo">
                   <Properties>
@@ -755,6 +772,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_areaTrabajo">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_areaTrabajo">
                   <Properties>
@@ -766,6 +786,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_fechaIncSesion">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_fechaIncSesion">
                   <Properties>
@@ -777,6 +800,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_fechaActividad">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="label_fechaActividad">
                   <Properties>

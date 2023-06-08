@@ -15,6 +15,7 @@ public class Placa extends javax.swing.JPanel {
      */
     public Placa() {
         initComponents();
+        
     }
 
     /**
