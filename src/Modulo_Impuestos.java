@@ -50,6 +50,23 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Btn_Recargos = new javax.swing.JButton();
         Btn_MiCuenta = new javax.swing.JButton();
         Bg_Contenido = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        btn_BuscarPlaca = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        txt_Placa = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        cbox_InstFinanciera = new javax.swing.JComboBox<>();
+        cbox_tipoDeuda = new javax.swing.JComboBox<>();
+        txt_fechaPago = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jLabel9 = new javax.swing.JLabel();
+        txt_ValorT = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -120,7 +137,7 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Background.add(Btn_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(995, 65, 60, 60));
 
         jTextField_Buscar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField_Buscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField_Buscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jTextField_Buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField_Buscar.setMinimumSize(new java.awt.Dimension(4, 33));
         Background.add(jTextField_Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 70, 320, 50));
@@ -260,15 +277,173 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
         Bg_Contenido.setBackground(new java.awt.Color(204, 255, 204));
         Bg_Contenido.setToolTipText("");
 
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel3.setText("Placa");
+
+        btn_BuscarPlaca.setBackground(new java.awt.Color(204, 204, 255));
+        btn_BuscarPlaca.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
+        btn_BuscarPlaca.setText("Buscar");
+        btn_BuscarPlaca.setToolTipText("");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null}
+            },
+            new String [] {
+                "Marca", "Modelo", "Año Modelo", "País"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+
+        jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 18)); // NOI18N
+        jLabel4.setText("Institución Financiera");
+
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 18)); // NOI18N
+        jLabel5.setText("Tipo de Deuda");
+
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 18)); // NOI18N
+        jLabel6.setText("Fecha de Pago");
+
+        cbox_InstFinanciera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ELIJA LA ENTIDAD BANCARIA", "BANCO DEL PACIFICO ", "BANCO PICHINCHA", "BANCO GUAYAQUIL S.A.", "BANCO BOLIVARIANO C.A.", "BANCO INTERNACIONAL", "BANCO PRODUBANCO", "BANCO DE LOJA", "COOPERATIVA DE AHORROS Y CREDITO SAN FRANCISCO", "COOPERATIVA DE AHORROS Y CREDITO POLICIA NACIONAL", "COOPERATIVA DE AHORROS Y CREDITO JEP", "TRANSFERUNION SA" }));
+
+        cbox_tipoDeuda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ELIJA EL TIPO DE PAGO", "PAGO DEL VALOR DE LA MATRICULA", "PAGO DE AJUSTE" }));
+
+        jLabel8.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel8.setText("Detalle de Pagos");
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Rubro", "Componente", "Año", "Valor"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Double.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(jTable2);
+
+        jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 1, 18)); // NOI18N
+        jLabel9.setText("Total:");
+
         javax.swing.GroupLayout Bg_ContenidoLayout = new javax.swing.GroupLayout(Bg_Contenido);
         Bg_Contenido.setLayout(Bg_ContenidoLayout);
         Bg_ContenidoLayout.setHorizontalGroup(
             Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addComponent(jSeparator1)
+            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                .addContainerGap(65, Short.MAX_VALUE)
+                .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 901, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(64, 74, Short.MAX_VALUE))
+                    .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                        .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbox_InstFinanciera, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(38, 38, 38)
+                        .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(cbox_tipoDeuda, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(txt_fechaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(94, 94, 94))))
+            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                                .addComponent(txt_Placa, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_BuscarPlaca)))
+                        .addGap(57, 57, 57)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel8)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                .addGap(343, 343, 343)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txt_ValorT, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(107, 107, 107))
         );
         Bg_ContenidoLayout.setVerticalGroup(
             Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                        .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btn_BuscarPlaca)
+                                    .addComponent(txt_Placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(16, 16, 16)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cbox_InstFinanciera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cbox_tipoDeuda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(Bg_ContenidoLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txt_fechaPago, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30)
+                .addComponent(jLabel8)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(Bg_ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(txt_ValorT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         Background.add(Bg_Contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 1040, 400));
@@ -395,10 +570,27 @@ public class Modulo_Impuestos extends javax.swing.JFrame {
     private javax.swing.JButton Btn_Recargos;
     private javax.swing.JButton Btn_Salir;
     private javax.swing.JLabel Logo_Name;
+    private javax.swing.JButton btn_BuscarPlaca;
+    private javax.swing.JComboBox<String> cbox_InstFinanciera;
+    private javax.swing.JComboBox<String> cbox_tipoDeuda;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField_Buscar;
+    private javax.swing.JTextField txt_Placa;
+    private javax.swing.JTextField txt_ValorT;
+    private javax.swing.JTextField txt_fechaPago;
     // End of variables declaration//GEN-END:variables
 }
