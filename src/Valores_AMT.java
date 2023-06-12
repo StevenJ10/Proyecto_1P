@@ -257,6 +257,11 @@ public class Valores_AMT extends javax.swing.JFrame {
         btnModuloImpuestos2.setBorderPainted(false);
         btnModuloImpuestos2.setContentAreaFilled(false);
         btnModuloImpuestos2.setFocusable(false);
+        btnModuloImpuestos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloImpuestos2ActionPerformed(evt);
+            }
+        });
 
         btnModuloRecargos2.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         btnModuloRecargos2.setText("Recargos");
@@ -276,6 +281,11 @@ public class Valores_AMT extends javax.swing.JFrame {
         btnModuloCuenta2.setBorderPainted(false);
         btnModuloCuenta2.setContentAreaFilled(false);
         btnModuloCuenta2.setFocusable(false);
+        btnModuloCuenta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModuloCuenta2ActionPerformed(evt);
+            }
+        });
 
         jPanel3.setBackground(new java.awt.Color(64, 149, 113));
 
@@ -500,6 +510,18 @@ public class Valores_AMT extends javax.swing.JFrame {
         mr.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnModuloRecargos2ActionPerformed
+
+    private void btnModuloImpuestos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloImpuestos2ActionPerformed
+        Modulo_Impuestos mi = new Modulo_Impuestos();
+        mi.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloImpuestos2ActionPerformed
+
+    private void btnModuloCuenta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloCuenta2ActionPerformed
+        Modulo_MiCuenta cuenta = new Modulo_MiCuenta();
+        cuenta.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnModuloCuenta2ActionPerformed
 
     /**
      * @param args the command line arguments
