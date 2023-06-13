@@ -168,7 +168,7 @@ public class Back extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel2.setText("2023 Cobros S.A.");
         background.add(jLabel2);
-        jLabel2.setBounds(920, 610, 140, 21);
+        jLabel2.setBounds(920, 610, 140, 24);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

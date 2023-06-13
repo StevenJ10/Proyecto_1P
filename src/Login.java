@@ -282,9 +282,47 @@ public class Login extends javax.swing.JFrame {
         //Mostrará la interfaz del menú principal del sistema
         Back abrir = new Back();
         abrir.setVisible(true);
+        realizarInicioSesion();
         dispose();
     }//GEN-LAST:event_txt_loginMouseClicked
 
+    
+    public void realizarInicioSesion() {
+    int intentosMaximos = 3;
+    int intentoActual = 1;
+    boolean exito = false;
+
+    while (intentoActual <= intentosMaximos && !exito) {
+        try {
+            boolean resultado = ToleranciaFallosInicioSesion.iniciarSesion();
+            if (resultado) {
+                exito = true;
+                System.out.println("Inicio de sesión exitoso");
+                // Mostrar la interfaz del menú principal del sistema
+                Back abrir = new Back();
+                abrir.setVisible(true);
+                dispose();
+            } else {
+                System.out.println("Credenciales incorrectas");
+                intentoActual++;
+                if (intentoActual <= intentosMaximos) {
+                    System.out.println("Intentando nuevamente...");
+                } else {
+                    System.out.println("Se excedió el número máximo de intentos");
+                }
+            }
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error: " + e.getMessage());
+                intentoActual++;
+                if (intentoActual <= intentosMaximos) {
+                    System.out.println("Intentando nuevamente...");
+                } else {
+                    System.out.println("Se excedió el número máximo de intentos");
+                }
+            }
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
