@@ -1,0 +1,1 @@
+Añadir el sqljdbc42.jar en el IDE Netbeans 8.2 o la versión que esté utilizando.
