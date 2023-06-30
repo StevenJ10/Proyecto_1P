@@ -1,7 +1,12 @@
 
 
 
+import DataBase.Conexion;
 import java.awt.Color;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {
     
@@ -189,7 +194,7 @@ public class Login extends javax.swing.JFrame {
         );
         btn_loginLayout.setVerticalGroup(
             btn_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txt_login, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(txt_login, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
         background.add(btn_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 120, 40));
@@ -280,10 +285,40 @@ public class Login extends javax.swing.JFrame {
 
     private void txt_loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_loginMouseClicked
         //Mostrará la interfaz del menú principal del sistema
-        Back abrir = new Back();
+        /*Back abrir = new Back();
         abrir.setVisible(true);
         realizarInicioSesion();
-        dispose();
+        dispose();*/
+        
+        String usuario = txt_user.getText();
+        String pass = txt_pass.getText();
+        
+        if (pass.isEmpty() || usuario.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Campo obligatorio");
+        } else {
+            Conexion conectar = new Conexion();
+            Statement st = conectar.Conectar();
+        }
+        Conexion conectar = new Conexion();
+        Statement st = conectar.Conectar();
+        
+        try {
+            ResultSet rs = st.executeQuery("SELECT * FROM tblUsers Where usuario='"+usuario+"'and clave='"+pass+"'");
+            rs.last();
+            int encontrado = rs.getRow();
+            if (encontrado == 1) {
+                JOptionPane.showMessageDialog(null, "Login Exitoso");
+                Back abrir = new Back();
+                abrir.setVisible(true);
+                hide();
+            } else {
+                txt_user.setText("");
+                txt_pass.setText("");
+                JOptionPane.showMessageDialog(null, "Crendenciales incorrectas");
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, ex);
+        }
     }//GEN-LAST:event_txt_loginMouseClicked
 
     
